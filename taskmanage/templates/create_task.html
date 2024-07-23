@@ -7,31 +7,6 @@ Task Form
 
 {% block content %}
 <div class="dashboard">
-<!-- <div class="container mt-4 taskbtn">
-    <div class="taskbtn1">
-        <div class="heading">
-            <h2>{% if form.instance.pk %}Edit Tweet {% else %}Task {% endif %}</h2>
-        </div>
-        <div class="form-group mx-3">
-        <form method="post" enctype="multipart/form-data" class="form">
-            {% csrf_token %}
-            {{form.as_p}}
-             <div class="form-title">
-             Title: {% render_field form.title placeholder="Title" class+="form-control"%}
-             Description: {% render_field form.description placeholder="Description" class+="form-title"%}
-             Priorities: {% render_field form.priority placeholder="Priority" class+="form-title"%}
-             Category: {% render_field form.category placeholder="Category" class+="form-title"%}
-             Due_date: {% render_field form.due_date class+="form-title"%}
-            </div>
-            <button class="btn btn-warning" type="submit">Add Task</button>
-        </form>
-        <a href="{% url 'task_list' %}">Back to tweet list</a>
-    </div>
-        
-    </div>
-</div> -->
-
-
   
   <!-- Modal -->
   <div id="taskFormModal" class="modal fade" tabindex="-1" role="dialog">

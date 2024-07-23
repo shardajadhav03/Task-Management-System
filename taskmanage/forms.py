@@ -14,7 +14,6 @@ class TaskForm(forms.ModelForm):
             'description': forms.Textarea(attrs={'class': 'form-control descrip'}),
             'priority': forms.Select(attrs={'class': 'form-select'}),
             'category': forms.Select(attrs={'class': 'form-select'}),
-            # 'completed': forms.BooleanField(attrs={'type': 'checkbox'}),
             'due_date': forms.DateInput(attrs={'class': 'form-control'}),
         }
     due_date = forms.DateField(

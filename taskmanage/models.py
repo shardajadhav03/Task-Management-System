@@ -19,7 +19,6 @@ class Task(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True,null=True)
-    # category = models.ForeignKey(Category,on_delete=models.SET_NULL, null=True, blank=True)
     priority = models.ForeignKey(Priority, on_delete=models.CASCADE,default=1)
     category = models.ForeignKey(Category, on_delete=models.CASCADE,default=1)
     completed = models.BooleanField(default=False)
