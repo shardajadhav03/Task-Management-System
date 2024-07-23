@@ -25,7 +25,7 @@ Task Management
                         <a class="btn btn-primary mb-4 " href="{% url 'dashboard' %}">{% if user.is_authenticated%}Go to dashboard {% else %} Signup For Free {% endif %}</a>
                     </div>
                     <div class="col-md-6 p-0">
-                        <img src="{% static 'images/Designer (1).png' %}" class="img-fluid rounded img" alt="image">
+                        <img src="{% staticfiles 'images/Designer (1).png' %}" class="img-fluid rounded img" alt="image">
                     </div>
                 </div>
             </div>
