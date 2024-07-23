@@ -8,7 +8,7 @@
       },
       {
         "src": "build_files.sh",
-        "use": "@vercel/builder-python",
+        "use": "@vercel/python",
         "config": {
           "disDir": "staticfiles"
         }
