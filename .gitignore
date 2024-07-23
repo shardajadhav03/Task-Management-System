@@ -3,3 +3,4 @@ calendar/calendar.json
 .venv
 credentials.json
 token.json
+.vercel
